@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<!-- <servlet>
+		<servlet-name>KLRAHUL</servlet-name>
+		<servlet-class>com.nikhil.SourceServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>KLRAHUL</servlet-name>
+		<url-pattern>/ss</url-pattern>
+	</servlet-mapping> -->
+	
+	<servlet>
+		<servlet-name>cs</servlet-name>
+		<servlet-class>com.mayuWeb2.ConnectionServlet</servlet-class>
+<init-param>
+<param-name>userName</param-name>
+<param-value>root</param-value>
+</init-param>
+<init-param>
+<param-name>password</param-name>
+<param-value>root</param-value>
+</init-param> 
+<init-param>
+<param-name>url</param-name>
+<param-value>jdbc:mysql://localhost:3306/db</param-value>
+</init-param>
+<init-param>
+<param-name>driver</param-name>
+<param-value>com.mysql.jdbc.Driver</param-value>
+</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>cs</servlet-name>
+		<url-pattern>/cs</url-pattern>
+	</servlet-mapping>
+	
+	
+	<welcome-file-list>  
+    <welcome-file>form.html</welcome-file>  
+</welcome-file-list> 
+</web-app>
